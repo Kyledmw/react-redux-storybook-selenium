@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WebDriverTests">
+	<!-- Define browsers to test against -->
+	<test name="Chrome">
+		<classes>
+			<!--  Define test classes to run -->
+			
+			<class name="com.selenium.test.cases.TestCase_RenderApplication" />
+			
+			<!-- Parameters for the above test classes -->
+			<parameter name="browserName" value="chrome"></parameter>
+		</classes>
+	</test>
+	<!-- Define parameters to apply to each test -->
+	<parameter name="baseURL" value="http://localhost:3000"></parameter>
+</suite>
